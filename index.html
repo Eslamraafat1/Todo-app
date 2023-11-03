@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style/all.min.css" />
+    <link rel="stylesheet" href="style/simple-line-icons.css" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="SVG"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560">
+      <g mask="url(&quot;#SvgjsMask1556&quot;)" fill="none">
+          <rect width="1440" height="560" x="0" y="0" fill="url(&quot;#SvgjsLinearGradient1557&quot;)"></rect>
+          <use xlink:href="#SvgjsSymbol1564" x="0" y="0"></use>
+          <use xlink:href="#SvgjsSymbol1564" x="720" y="0"></use>
+      </g>
+      <defs>
+          <mask id="SvgjsMask1556">
+              <rect width="1440" height="560" fill="#ffffff"></rect>
+          </mask>
+          <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient1557">
+              <stop stop-color="#0e2a47" offset="0"></stop>
+              <stop stop-color="rgba(8, 11, 14, 1)" offset="1"></stop>
+          </linearGradient>
+          <path d="M-1 0 a1 1 0 1 0 2 0 a1 1 0 1 0 -2 0z" id="SvgjsPath1563"></path>
+          <path d="M-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0z" id="SvgjsPath1560"></path>
+          <path d="M-5 0 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0z" id="SvgjsPath1558"></path>
+          <path d="M2 -2 L-2 2z" id="SvgjsPath1561"></path>
+          <path d="M6 -6 L-6 6z" id="SvgjsPath1559"></path>
+          <path d="M30 -30 L-30 30z" id="SvgjsPath1562"></path>
+      </defs>
+      <symbol id="SvgjsSymbol1564">
+          <use xlink:href="#SvgjsPath1558" x="30" y="30" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="30" y="90" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="30" y="150" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1560" x="30" y="210" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="30" y="270" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="30" y="330" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="30" y="390" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="30" y="450" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1560" x="30" y="510" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="30" y="570" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="90" y="30" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="90" y="90" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="90" y="150" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="90" y="210" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="90" y="270" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="90" y="330" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1562" x="90" y="390" stroke="#1c538e" stroke-width="3"></use>
+          <use xlink:href="#SvgjsPath1558" x="90" y="450" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="90" y="510" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1563" x="90" y="570" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1560" x="150" y="30" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="150" y="90" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="150" y="150" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="150" y="210" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="150" y="270" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="150" y="330" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="150" y="390" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="150" y="450" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="150" y="510" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="150" y="570" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1562" x="210" y="30" stroke="#1c538e" stroke-width="3"></use>
+          <use xlink:href="#SvgjsPath1558" x="210" y="90" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="210" y="150" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="210" y="210" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1563" x="210" y="270" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="210" y="330" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="210" y="390" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="210" y="450" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="210" y="510" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1562" x="210" y="570" stroke="#1c538e" stroke-width="3"></use>
+          <use xlink:href="#SvgjsPath1563" x="270" y="30" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="270" y="90" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1560" x="270" y="150" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1560" x="270" y="210" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="270" y="270" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="270" y="330" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="270" y="390" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="270" y="450" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="270" y="510" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1562" x="270" y="570" stroke="#1c538e" stroke-width="3"></use>
+          <use xlink:href="#SvgjsPath1558" x="330" y="30" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="330" y="90" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="330" y="150" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1563" x="330" y="210" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1563" x="330" y="270" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1560" x="330" y="330" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="330" y="390" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="330" y="450" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="330" y="510" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="330" y="570" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="390" y="30" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="390" y="90" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="390" y="150" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="390" y="210" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="390" y="270" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="390" y="330" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="390" y="390" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="390" y="450" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="390" y="510" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="390" y="570" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="450" y="30" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="450" y="90" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="450" y="150" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="450" y="210" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="450" y="270" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="450" y="330" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="450" y="390" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1563" x="450" y="450" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="450" y="510" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="450" y="570" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="510" y="30" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="510" y="90" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="510" y="150" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1562" x="510" y="210" stroke="#1c538e" stroke-width="3"></use>
+          <use xlink:href="#SvgjsPath1563" x="510" y="270" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="510" y="330" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="510" y="390" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="510" y="450" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="510" y="510" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="510" y="570" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="570" y="30" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="570" y="90" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="570" y="150" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="570" y="210" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="570" y="270" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="570" y="330" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1563" x="570" y="390" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="570" y="450" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="570" y="510" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="570" y="570" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="630" y="30" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="630" y="90" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="630" y="150" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="630" y="210" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="630" y="270" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="630" y="330" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="630" y="390" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="630" y="450" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="630" y="510" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1561" x="630" y="570" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="690" y="30" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="690" y="90" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="690" y="150" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="690" y="210" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1563" x="690" y="270" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="690" y="330" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="690" y="390" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1558" x="690" y="450" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="690" y="510" stroke="#1c538e"></use>
+          <use xlink:href="#SvgjsPath1559" x="690" y="570" stroke="#1c538e"></use>
+      </symbol>
+  </svg></div>
+  <div class="SVVG">
+
+  
+    <header class="header flex align-center space-between">
+      <h4>welcome back!</h4>
+      <div class="flex align-center space-between">
+        <h4>activity</h4>
+        <button class="btn" id="newTodo">create new todo</button>
+      </div>
+    </header>
+
+    <main class="root">
+      <div class="root-content flex gap-15">
+        <div class="left-side">
+          <div class="left-container">
+            <div class="cards">
+              <div class="card card-style flex align-center gap-10">
+                <div class="image">
+                  <img
+                    src="assets/logo.png"
+                    width="40"
+                    height="40"
+                    alt="image"
+                  />
+                </div>
+
+                <div class="content">
+                  <h5 class="title">Coming event</h5>
+                  <p class="text">meet mohammed in cafe at 07:00 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="watch card-style flex align-center justify-center column"
+            >
+              <h1 class="time">06:19 PM</h1>
+              <h4 class="date">Saturday, 20, 2023</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="right-container">
+            <h4 class="heading">Activity</h4>
+            <div class="activity-cards flex align-center gap-15">
+              <!-- <div class="activity-card card-style">
+                <div class="color"></div>
+                <h5 class="title">the standard Lorem ipsum dolor sit amet..</h5>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing...
+                </p>
+
+                <div class="card-ctrl flex align-center space-between">
+                  <div class="card-status flex align-center gap-10">
+                    <div class="check flex align-center gap-10">
+                      <i class="icon-check"></i>
+                      <span class="check-number">5</span>
+                    </div>
+
+                    <div class="done-or-not flex align-center gap-15">
+                      <span class="done">done</span>
+                      <div class="not-done flex align-center gap-5">
+                        <span class="circle"></span>
+                        <span class="not-done-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-setting flex align-center gap-10">
+                    <div class="date">02/10/2023</div>
+                    <div class="edit-delete flex align-center gap-10">
+                      <span class="edit" id="edit-todo">edit</span>
+                      <span class="delete" id="delete-todo">delete</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="activity-card card-style">
+                <div class="color"></div>
+                <h5 class="title">the standard Lorem ipsum dolor sit amet..</h5>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing...
+                </p>
+
+                <div class="card-ctrl flex align-center space-between">
+                  <div class="card-status flex align-center gap-10">
+                    <div class="check flex align-center gap-10">
+                      <i class="icon-check"></i>
+                      <span class="check-number">5</span>
+                    </div>
+
+                    <div class="done-or-not flex align-center gap-15">
+                      <span class="done">done</span>
+                      <div class="not-done flex align-center gap-5">
+                        <span class="circle"></span>
+                        <span class="not-done-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-setting flex align-center gap-10">
+                    <div class="date">02/10/2023</div>
+                    <div class="edit-delete flex align-center gap-10">
+                      <span class="edit" id="edit-todo">edit</span>
+                      <span class="delete" id="delete-todo">delete</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="activity-card card-style">
+                <div class="color"></div>
+                <h5 class="title">the standard Lorem ipsum dolor sit amet..</h5>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing...
+                </p>
+
+                <div class="card-ctrl flex align-center space-between">
+                  <div class="card-status flex align-center gap-10">
+                    <div class="check flex align-center gap-10">
+                      <i class="icon-check"></i>
+                      <span class="check-number">5</span>
+                    </div>
+
+                    <div class="done-or-not flex align-center gap-15">
+                      <span class="done">done</span>
+                      <div class="not-done flex align-center gap-5">
+                        <span class="circle"></span>
+                        <span class="not-done-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-setting flex align-center gap-10">
+                    <div class="date">02/10/2023</div>
+                    <div class="edit-delete flex align-center gap-10">
+                      <span class="edit" id="edit-todo">edit</span>
+                      <span class="delete" id="delete-todo">delete</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="activity-card card-style">
+                <div class="color"></div>
+                <h5 class="title">the standard Lorem ipsum dolor sit amet..</h5>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing...
+                </p>
+
+                <div class="card-ctrl flex align-center space-between">
+                  <div class="card-status flex align-center gap-10">
+                    <div class="check flex align-center gap-10">
+                      <i class="icon-check"></i>
+                      <span class="check-number">5</span>
+                    </div>
+
+                    <div class="done-or-not flex align-center gap-15">
+                      <span class="done">done</span>
+                      <div class="not-done flex align-center gap-5">
+                        <span class="circle"></span>
+                        <span class="not-done-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-setting flex align-center gap-10">
+                    <div class="date">02/10/2023</div>
+                    <div class="edit-delete flex align-center gap-10">
+                      <span class="edit" id="edit-todo">edit</span>
+                      <span class="delete" id="delete-todo">delete</span>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Form Add Todo -->
+    <section class="form-add-todo">
+      <div class="form-add-todo-container">
+        <form id="formAddTodo">
+          <div class="form-heading flex align-center space-between gap-15">
+            <div class="flex align-center gap-15">
+              <i class="fas fa-arrow-left back-home" id="backHome"></i>
+              <h3>Add Todo</h3>
+            </div>
+
+            <button class="btn form-add-btn" id="formAddBtn">Add</button>
+          </div>
+
+          <div class="input-group">
+            <input type="text" placeholder="todo title" id="todoTitle" />
+          </div>
+
+          <div class="input-group flex gap-15">
+            <div class="left-inputs">
+              <input type="time" placeholder="todo time" id="todoTime" />
+              <textarea
+                name="content"
+                placeholder="todo Content"
+                id="todoContent"
+                cols="30"
+                rows="20"
+              ></textarea>
+
+              <div class="input-group">
+                <input type="color" id="todoColor" class="input-color" />
+                <label
+                  for="todoColor"
+                  class="chose-color flex align-center justify-center gap-10"
+                >
+                  <div class="color-value"></div>
+                  <p>chose color</p>
+                </label>
+              </div>
+            </div>
+
+            <div class="right-inputs">
+              <div class="items-container">
+                <!-- <div class="item-box flex align-center space-between gap-10">
+                  <div class="item-box-left flex align-center gap-5">
+                    <span class="circle"></span>
+                    <p class="item-text">on the other hand</p>
+                  </div>
+                  <div class="item-box-date">
+                    <p>7:20 Am</p>
+                  </div>
+                </div> -->
+              </div>
+
+              <div
+                class="flex align-center gap-10 justify-center add-more-item"
+                id="addMoreItem"
+              >
+                <i class="icon-plus"></i>
+                <span>add More Item</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="todo-tasks flex align-center justify-center">
+        <div class="todo-tasks-container">
+          <i class="icon-close close-todo-task"></i>
+          <form class="todo-task-form" id="todoTaskForm">
+            <div class="input-group">
+              <input type="text" placeholder="todo task" id="todoTaskInput" />
+              <input type="time" placeholder="time" id="todoTaskTimeInput" />
+            </div>
+            <button class="btn" id="addTodoTask">add task</button>
+          </form>
+
+          <form class="todo-edit-task-form" id="todoEditTaskForm">
+            <div class="input-group">
+              <input
+                type="text"
+                placeholder="todo task"
+                id="editTodoTaskInput"
+              />
+              <input
+                type="time"
+                placeholder="time"
+                id="todoEditTaskTimeInput"
+              />
+            </div>
+            <button class="btn" id>edit task</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Edit Todo -->
+    <section class="form-edit-todo">
+      <div class="form-edit-todo-container">
+        <form id="formeEditTodo">
+          <div class="form-heading flex align-center space-between gap-15">
+            <div class="flex align-center gap-15">
+              <i class="fas fa-arrow-left back-home" id="editBackHome"></i>
+              <h3>Edit Todo</h3>
+            </div>
+
+            <button class="btn form-edit-btn">Edit</button>
+          </div>
+
+          <div class="input-group">
+            <input type="text" placeholder="todo title" id="editTodoTitle" />
+          </div>
+
+          <div class="input-group flex gap-15">
+            <div class="left-inputs">
+              <input type="time" placeholder="todo time" id="editTodoTime" />
+              <textarea
+                name="content"
+                placeholder="todo Content"
+                id="editTodoContent"
+                cols="30"
+                rows="20"
+              ></textarea>
+
+              <div class="input-group">
+                <input type="color" id="editTodoColor" class="input-color" />
+                <label
+                  for="editTodoColor"
+                  class="chose-color chose-color-edit flex align-center justify-center gap-10"
+                >
+                  <div class="color-value color-value-edit"></div>
+                  <p>chose color</p>
+                </label>
+              </div>
+            </div>
+
+            <div class="right-inputs">
+              <div class="edit-items-container">
+                <!-- <div class="item-box flex align-center space-between gap-10">
+                      <div class="item-box-left flex align-center gap-5">
+                        <span class="circle"></span>
+                        <p class="item-text">on the other hand</p>
+                      </div>
+                      <div class="item-box-date">
+                        <p>7:20 Am</p>
+                      </div>
+                    </div> -->
+              </div>
+
+              <div
+                class="flex align-center gap-10 justify-center add-more-item"
+                id="addMoreItemEdit"
+              >
+                <i class="icon-plus"></i>
+                <span>add More Item</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="todo-tasks todo-tasks_edit flex align-center justify-center">
+        <div class="todo-tasks-container">
+          <i class="icon-close close-todo-task close-todo-task_edit"></i>
+          <form class="todo-task-form" id="todoTaskForm_edit">
+            <div class="input-group">
+              <input
+                type="text"
+                placeholder="todo task"
+                id="todoTaskInput_edit"
+              />
+              <input
+                type="time"
+                placeholder="time"
+                id="todoTaskTimeInput_edit"
+              />
+            </div>
+            <button class="btn" id="addTodoTask_edit">add task</button>
+          </form>
+
+          <form class="todo-edit-task-form" id="todoEditTaskForm_edit">
+            <div class="input-group">
+              <input
+                type="text"
+                placeholder="todo task"
+                id="editTodoTaskInput_edit"
+              />
+              <input
+                type="time"
+                placeholder="time"
+                id="todoEditTaskTimeInput_edit"
+              />
+            </div>
+            <button class="btn" id>edit task</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Todo Details -->
+    <section class="todo-details">
+      <div class="todo-details-container">
+        <div class="todo-details-ctrl flex align-center gap-20">
+          <i class="icon-close close-todo" id="closeTodo"></i>
+        </div>
+
+        <div class="todo-details-heading">
+          <!-- <h4 class="todo-title">
+            can you help translate this site into a foreign
+          </h4>
+          <p class="todo-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui
+            magni assumenda. At, pariatur quaerat?
+          </p> -->
+        </div>
+
+        <div class="todo-details-tasks-container">
+          <!-- <div class="task-item-box flex align-center space-between">
+            <div class="left flex align-center gap-10">
+              <span class="circle"></span>
+              <h4 class="task-title">injected humour</h4>
+            </div>
+
+            <div class="right">
+              <p class="todo-time">02:10 Am</p>
+            </div>
+          </div> -->
+        </div>
+        <div class="ctrl flex align-center gap-20"></div>
+      </div>
+    </section>
+  </div>
+
+    <script src="src/js/dist/index.js"></script>
+  </body>
+</html>
